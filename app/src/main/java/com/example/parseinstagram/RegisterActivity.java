@@ -47,7 +47,6 @@ public class RegisterActivity extends Activity {
 
         user.setUsername(username);
         user.setPassword(password);
-//        user.setEmail(email);
         user.signUpInBackground(new SignUpCallback() {
             @Override
             public void done(com.parse.ParseException e) {
