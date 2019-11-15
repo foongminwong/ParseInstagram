@@ -20,7 +20,7 @@ public class LoginActivity extends AppCompatActivity {
     EditText etUsername;
     EditText etPassword;
     Button btnLogin;
-    ProgressBar loadingProgressBar;
+    Button btnRegister;
 
     private static final String TAG = "LoginActivity";
     @Override
@@ -31,7 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
-//        loadingProgressBar = findViewById(R.id.loading);
+        btnRegister = findViewById(R.id.btnRegister);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +42,17 @@ public class LoginActivity extends AppCompatActivity {
                 login(username, password);
             }
         });
+
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                register();
+            }
+        });
     }
+
+
+
 
     private void login(String username, String password) {
        // navigate to new activity if the user has signed properly
@@ -67,5 +77,12 @@ public class LoginActivity extends AppCompatActivity {
         Intent i = new Intent(this, MainActivity.class);
         startActivity(i);
         finish();
+    }
+
+    private void register() {
+        Log.d(TAG, "Navigating to Register Activity");
+        Intent i = new Intent(this, RegisterActivity.class);
+        startActivity(i);
+
     }
 }
