@@ -40,6 +40,12 @@ GIF created with [ScreenToGif](https://www.screentogif.com/).
 
 ## Notes
 
+- Created app logo using Canva
+<img src='logo.PNG' title='Learn how to use Heroku' width='' alt='Learn how to use Heroku' />
+
+- Learned how to use Heroku to build, run and operate ParseInstagram App
+<img src='heroku.PNG' title='Learn how to use Heroku' width='' alt='Learn how to use Heroku' />
+
 Describe any challenges encountered while building the app.
 
 ## Open-source libraries used
