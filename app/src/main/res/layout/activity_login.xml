@@ -4,25 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00ECEAEA"
+    android:background="#FFFF"
     android:orientation="vertical"
+    android:layout_centerInParent="false"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageView
+        android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="monospace"
-        android:layout_marginTop="150dp"
-        android:text="Welcome! :)"
-        android:textAlignment="center"
-        android:textSize="45sp" />
+        android:layout_marginTop="0dp"
+        android:contentDescription="logo"
+        android:src="@drawable/logo" />
 
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+
         android:ems="10"
         android:hint="username"
         android:inputType="text" />
@@ -52,4 +53,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Register" />
+
+
 </LinearLayout>

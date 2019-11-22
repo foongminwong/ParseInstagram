@@ -1,31 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF"
     tools:context=".RegisterActivity">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo" />
 
     <EditText
         android:id="@+id/etUsernameRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
         android:ems="10"
-        android:layout_marginTop="150dp"
         android:hint="Enter username"
-        android:inputType="textPersonName"
-       />
-
-
+        android:inputType="textPersonName" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:passwordToggleEnabled="true"
-         >
-
-    </com.google.android.material.textfield.TextInputLayout>
+        app:passwordToggleEnabled="true"></com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnSubmitRegister"
@@ -36,7 +39,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="297dp"
-        android:text="Submit" />
+        android:text="Join Us!" />
 
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/etPasswordRegister"
@@ -45,7 +48,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="218dp"
+        android:layout_marginTop="250dp"
         android:hint=" Enter Password"
         android:inputType="textPassword" />
+
 </RelativeLayout>
